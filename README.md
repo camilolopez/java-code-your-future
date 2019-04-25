@@ -138,21 +138,21 @@ Go to Topic 0 resources, check folder *Topic0JavaBootCamp/src*, you will find a 
 - Egg's Cartons Console representation in 1 day. e.g.
 *o*: white eggs
 *q*: red eggs
-*e*: empty 
-=========
-*|ooooo|
-|ooooo|
-|ooooo|
-|ooooo|
-|ooooo|
-|oooee*|
-=========
-*|qqqqq|
-|qqqqq|
-|qqqqq|
-|qqqqq|
-|qqqqq|
-|qqeee|*
+*e*: empty<br/> 
+=========\
+|ooooo|\
+|ooooo|\
+|ooooo|\
+|ooooo|\
+|ooooo|\
+|oooee|\
+=========\
+|qqqqq|\
+|qqqqq|\
+|qqqqq|\
+|qqqqq|\
+|qqqqq|\
+|qqeee|
 
 ## Commit:
 
