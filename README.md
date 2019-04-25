@@ -1,4 +1,4 @@
-# Welcome to the Java Bootcamp for future Globers!
+# Welcome to the Code Your Future "Bootcamp" for Globers!
 
 Please, use this repository as a base for your training. 
 The idea is to fork this project so everyone use the same folder structure for the exercises.
@@ -25,17 +25,14 @@ The idea is to fork this project so everyone use the same folder structure for t
 
 9. [Learning Days](#learning-days)
 
-    * [Topic 0: Introduction to Object Oriented Programming Concepts (OOP)](#topic-0-introduction-to-object-oriented-programming-concepts)
-
-    * [Topic 1: Maven](#topic-1-maven)
-
-    * [Topic 2: Services](#topic-2-services)
-    
-    * [Topic 3: Unit Testing](#topic-3-unit-testing)
-
-    * [Topic 4: SQL - MySql](#topic-4-sql---mysql)
-    
-    * [Topic 5: Spring (Core, Boot) and Swagger](#topic-5-spring-core-boot-and-swagger)
+    * [Topic 0: Introduction to Java and Object Oriented Programming Concepts](topic-0-introduction-to-java-and-object-oriented-programming-concepts)
+    * [Topic 1: Design and Development Principles](#topic-1-design-and-development-principles)
+    * [Topic 2: Application Building using Maven](#topic-2-application-building-using-maven)
+    * [Topic 3: Unit Testing with JUnit and Mockito](#topic-3-unit-testing-with-junit-and-mockito)
+    * [Topic 4: Introduction to the Spring Framework](#topic-4-introduction-to-the-spring-framework)
+    * [Topic 5: Database Interaction and ORMs](#topic-5-database-interaction-and-orms)
+ 
+    * [Topic 6: REST Application Design with Spring Boot](#topic-6-rest-application-design-with-spring-boot)
 
 10. [Your First Project Starts Now!](#your-first-project-starts-now)
 
@@ -59,13 +56,13 @@ Four weeks total, where we are going to mix reading, coding practice, chat discu
 
 ## Technical Assistance
 
-You can contact other bootcamp participants or any available tutor if you need technical assistance. We will have a chat room to discuss all together.
+You can contact other participants or any available trainer if you need technical assistance. We will have a [Slack](https://www.youtube.com/watch?v=9RJZMSsH7-g)'s channels to discuss all together.
 
 → [index](#index)
 
 ## Performance Measurement
 
-When you feel like you are good to go with a practice code, let tutors know and ask for review. This is to avoid getting to the very end of the training with no feedback. The idea is to keep things going dinamically, and being constantly in contact. 
+When you feel like you are good to go with a practice code, let trainers know and ask for review. This is to avoid getting to the very end of the training with no feedback. The idea is to keep things going dinamically, and being constantly in contact. 
 
 → [index](#index)
 
@@ -77,46 +74,34 @@ When you feel like you are good to go with a practice code, let tutors know and 
 2. The IDE to use is [Eclipse for Java Developers](http://www.eclipse.org/downloads/). [
 Eclipse IDE for Java EE Developers Recommended](http://www.eclipse.org/downloads/packages/).
 
-3. Slack java-bootcamp-globers account
+3. [Download](https://slack.com/downloads) and install Slack's application. You will receive an invitation in your email to join to Slack's workspace *globant-qnr1734* or just sign in to https://globant-qnr1734.slack.com
 
 4. Create your own [GitHub](https://github.com/) account. Follow this [guideline](https://help.github.com/articles/set-up-git) to setup your account. Also you can read further about Git in [Try Git](https://try.github.io/levels/1/challenges/1) or [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
 
-5. Fork this repo https://github.com/marcelorosas/java-bootcamp/ to use as a base to host the project code. Read [this](https://help.github.com/articles/fork-a-repo/) for instructions.
-
+5. Fork this repo https://github.com/camilolopez/java-code-your-future to use as a base to host the project code. Read [this](https://help.github.com/articles/fork-a-repo/) for instructions.
+6. Each Topic Practice should be commited into a folder with <*your_name>/topic<#>*. Example: ***pepito_perez/topic0***
 → [index](#index)
 
  
 
 ## General Guidelines
 
-The bootcamp is organized in the following way:
+The Code Your Future bootcamp is organized in the following way:
 
-each bootcamper needs to read about the topics and jump into the coding excercises. Slack channel will be used to discuss with tutors and co-bootcampers about both theory and practice, and each on-site talk we are going to go through the outcome of Slack channel discussions, emphasizing about those topics that are causing more pain for all.
+each bootcamper needs to read about the topics and jump into the coding excercises. An a Slack's channel will be used to discuss with tutors and co-bootcampers about both theory and practice, and each on-site talk we are going to go through the outcome of Slack channel discussions, emphasizing about those topics that are causing more pain for all.
 
-This slack account would be used for technical assistance: https://java-bootcamp-globers.slack.com
+Slack's account would be used for technical assistance:
+>Code Your Future Java Globant Uruguay - #general*
 
-    Bootcamp Java Globant Uruguay - #general
-Every person participating in the bootcamp is present here (students and tutors). Here is the place to ask for technical assistance!
+Every person participating in the bootcamp is present here (trainees and trainners). Here is the place to ask for technical assistance!
 
 [Team play](http://www.dummies.com/how-to/content/ten-qualities-of-an-effective-team-player.html) is encouraged but the work will be evaluated per person.
 
-The instructions will be vague as they generally are in real life projects. You must look for support and guidance from your tutor and teammates.
+The instructions will be vague as they generally are in real life projects. You must look for support and guidance from your traineers and teammates.
 
 All code and documentation must be in English.
 
-Code needs to be clear and indented properly. You can adhere to this [eclipse code formatter](https://github.com//sebastian-garofalo/java-bootcamp/blob/master/formatter.xml). See importing instructions in this [link](http://www.avajava.com/tutorials/lessons/how-do-i-share-my-code-formatting-settings-with-another-user.html?page=2).
-
 → [index](#index)
-
-## Proposed Test Application
-
-The test application will consist in a REST API for a functional shopping cart. It should include as much as you can on this feature list:
-
-  - List products.
-  - Find products by category and name.
-  - Save cart before buy.
-  - Buy products.
-
 
 ## Learning Days
 
@@ -133,31 +118,41 @@ You will implement the previously gathered knowledge in simple coding activities
 3. ####Commit:####
 You will commit all your code as soon as you finish your practice. No rush, but ideally enough commits to have questions to discuss through slack and for the next talk.
 
-### Introduction
-
-  - [JVM](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html#t1s1). See: "Java Technology and the JVM"
-
-# Topic 0: Introduction to Object Oriented Programming Concepts
+# Topic 0: Introduction to Java and Object Oriented Programming Concepts
 
 ## Reading:
 
-1. Java Concepts [basic tutorial](http://docs.oracle.com/javase/tutorial/java/concepts/)
+1. [JVM](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html#t1s1). See: "Java Technology and the JVM"
+2.  Java Concepts [basic tutorial](http://docs.oracle.com/javase/tutorial/java/concepts/)
 
-2. Have fun with [Introduction to Java Programming](http://www.ibm.com/developerworks/java/tutorials/j-introtojava1/). Do as much as you want.
+## Practice
 
-3. Explore [Design Patterns](http://www.avajava.com/tutorials/categories/design-patterns). Don't go crazy on this reading, the idea is to know they exist, and when we discuss about them, we'll see why they exist. Examples are singleton, factory, abstract factory, strategy, template method, proxy, decorator and builder, but there are zillions, so take it easy.
+ -  Sign Up with your email account and make all exercises listed [here](https://repl.it/community/classrooms/20700).
+ -  Have fun with ](http://www.ibm.com/developerworks/java/tutorials/j-introtojava1/). 
+ 
+ ## Topic Practice
+Go to Topic 0 resources, check folder *Topic0JavaBootCamp/src*, you will find a basic structure of a Java Project, with an initial application abstraction. Import these files to your eclipse's project. You have to build a Java Application using all OOP concepts. You have to make a Farm, with a Farmer and a Hen House with 40 Hens, 70% of Heans lay Red Eggs and 30% Heans lay White Eggs, each Hen will lay 2 eggs per day. Your Farmer have to recolect them inside an Egg's Carton, each Egg's Carton (6 x 5) has a capacity for 30 eggs and it will be classified them by color. 
 
-## Extra documentation:
+### Expected Result
 
-* [Design Patterns Card](http://www.mcdonaldland.info/files/designpatterns/designpatternscard.pdf)
-
-
-## Practice:
-
-1. Create a singleton example for a database connection.
-2. Create a abstract factory example for diferent type of SQL connections. See [this](http://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm) example 
-3. Create a proxy example for database accesor clases.
-4. Create a builder example for database connection.
+- Egg's Cartons Console representation in 1 day. e.g.
+*o*: white eggs
+*q*: red eggs
+*e*: empty 
+=========
+*|ooooo|
+|ooooo|
+|ooooo|
+|ooooo|
+|ooooo|
+|oooee*|
+=========
+*|qqqqq|
+|qqqqq|
+|qqqqq|
+|qqqqq|
+|qqqqq|
+|qqeee|*
 
 ## Commit:
 
@@ -165,7 +160,26 @@ Commit your practice code, whatever you have accomplished.
 
 → [index](#index)
 
-# Topic 1: Maven
+# Topic 1: Design and Development Principles
+## Reading
+### Common Design Patterns used in Java Project
+
+Explore [Design Patterns](https://www.oodesign.com/). Don't go crazy on this reading, the idea is to know they exist, and when we discuss about them, we'll see why they exist. 
+
+Understand that there are zillions, so take it easy but do take the time to have an overview of them.
+
+Ideally, let's make the time to get familiar with the basics of the following:
+
++ [Singleton](https://sourcemaking.com/design_patterns/singleton) 
++ [Factory](https://sourcemaking.com/design_patterns/factory_method)
++ [Abstract Factory](https://sourcemaking.com/design_patterns/abstract_factory)
++ [Builder](https://sourcemaking.com/design_patterns/builder)
++ [Decorator](https://sourcemaking.com/design_patterns/decorator)
+
+## Topic Practice:
+Improve your Farm Java Application applying these basic design patterns
+
+# Topic 2: Application Building Using Maven
 
 ## Reading:
 1. [What is Maven?](http://maven.apache.org/what-is-maven.html)
@@ -174,42 +188,22 @@ Commit your practice code, whatever you have accomplished.
 
 3. Maven: [best practices](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-best-practice.html)
 
-## Practice:
+4.  Log4j: [What it is?](https://www.java4s.com/log4j-tutorials/)
+
+## Topic Practice:
 
 (It is assumed that Maven is already installed and working).
 
-1. Create and build a simple Maven project.
+1. Convert you current Farm Java Project into a Maven Project, [see](https://crunchify.com/how-to-convert-existing-java-project-to-maven-in-eclipse/).
 2. Customize the Maven project by adding new dependencies: log4j, junit.
-3. Create a simple unit test under src/test/java and run it. Then skip the unit test by property or by adding the skipping test configuration to your pom.xml file.
+3. Configure log4j in your application and add some log staments inside it.
 
 ## Commit:
 
 Commit your practice code, whatever you have accomplished.
 
 → [index](#index)
-
-# Topic 2: Services
-
-## Reading:
-1. [How to design a good API and why it matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
-
-2. [Introduction to REST](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
-
-## Practice: create a shopping cart API spec by
-
- 1. Using GET, POST, PUT and DELETE HTTP methods
- 2. Defining the URL for each request
- 3. Defining the corresponding headers
- 4. Defining the corresponding payload for each request and response
-
-## Commit:
-
-Commit your practice results (just a single text file with the design)
-
-→ [index](#index)
-
-
-# Topic 3: Unit Testing
+# Topic 3: Unit Testing with JUnit and Mockito
 
 ## Reading:
 1. [Benefits of Unit Testing](https://dzone.com/articles/top-8-benefits-of-unit-testing)
@@ -220,7 +214,7 @@ Commit your practice results (just a single text file with the design)
 
 ## Practice:
 
-1. Implements all unit test cases in JUnit for the services methods implemented in the previous topic.
+1. Implements all unit test cases in JUnit for the methods implemented in the farm application.
 
 ## Commit:
 
@@ -229,7 +223,17 @@ Commit your practice code, whatever you have accomplished.
 → [index](#index)
 
 
-# Topic 4: SQL - MySql
+# Topic 4: Introduction to the Spring Framework
+
+## Reading:
+
+1. [Spring Framework Fundamentals](https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial)
+
+2. [Spring Framework Projects](https://www.baeldung.com/org-springframework)
+
+→ [index](#index)
+
+# Topic 5: Database Interaction and ORMs
 
 ## Reading:
 1. [MySql basis](http://www.vogella.com/tutorials/MySQL/article.html)
@@ -282,25 +286,24 @@ Commit your practice code, whatever you have accomplished.
 
 → [index](#index)
 
-# Topic 5: Spring (Core, Boot) and Swagger
+# Topic 6: REST Application Design with Spring Boot
 
-## Reading:
+ 1. [What's HTTP?](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
 
-1. [Spring Framework Fundamentals](https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial)
+2. [Introduction to REST](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
+3. [How to design a good API and why it matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
+4. [Spring Boot Introduction](https://www.baeldung.com/spring-boot-start)
+5. [Building Rest Services With Spring - Practical Tutorial](http://spring.io/guides/tutorials/bookmarks/)
+6. [REST API documentation with Swagger](http://swagger.io/getting-started/)
 
-2. [Spring Framework Projects](https://www.baeldung.com/org-springframework)
+## Topic Practice
 
-3. [Spring Boot Introduction](https://www.baeldung.com/spring-boot-start)
+Create a Egg's Shopping API where you can list 
 
-4. [Building Rest Services With Spring - Practical Tutorial](http://spring.io/guides/tutorials/bookmarks/)
-
-5. [REST API documentation with Swagger](http://swagger.io/getting-started/)
-  
-## Practice: 
-
-1. Expose the shopping cart created in the topic 3.
-2. Write the swagger file.
-3. Create and document with swagger a REST API to register users. The API must provide: add, delete, update, find by name and find by nickname operations. Note that the username must be unique.
+1. Using GET, POST, PUT and DELETE HTTP methods
+2. Defining the URL for each request
+3. Write the swagger file.
+4. Create and document with swagger a REST API to register users. The API must provide: add, delete, update, find by name and find by nickname operations. Note that the username must be unique.
 
 ## Commit:
 
