@@ -44,13 +44,13 @@ This course teaches the basics of Java development and the tools and frameworks 
 
 ## Who Should Attend
 
-The training will start at a low level and does not require in depth knowledge of the platform in question. Desirable participant profile: outside Globant candidates with a basic knowledge on OOP and a lot of energy!
+The training will start at a low level and does not require in depth knowledge of the platform in question. Desirable participant profile: Globant trainees with a basic knowledge on OOP and a lot of energy!
 
 → [index](#index)
 
 ## Duration
 
-Four weeks total, where we are going to mix reading, coding practice, chat discussions and on-site talks. The target is, after 4 weeks of all this, each candidate would have a final project up and running. 
+Four weeks total, where we are going to mix reading, coding practice, chat discussions and on-site talks. The target is, after 4 weeks of all this, each trainee would have a final project up and running. 
 
 → [index](#index)
 
@@ -71,10 +71,9 @@ When you feel like you are good to go with a practice code, let trainers know an
 
 1. Install [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-2. The IDE to use is [Eclipse for Java Developers](http://www.eclipse.org/downloads/). [
-Eclipse IDE for Java EE Developers Recommended](http://www.eclipse.org/downloads/packages/).
+2. The IDE to use is [Eclipse IDE for Enterprise Java Developers](https://www.eclipse.org/downloads/packages/). 
 
-3. [Download](https://slack.com/downloads) and install Slack's application. You will receive an invitation in your email to join to Slack's workspace *globant-qnr1734* or just sign in to https://globant-qnr1734.slack.com
+3. [Download](https://slack.com/downloads) and install Slack's application. You will receive an invitation in your email to join to Slack's workspace *globant-qnr1734* or just sign in to https://globant-qnr1734.slack.com, please updated your profile picture with your face!
 
 4. Create your own [GitHub](https://github.com/) account. Follow this [guideline](https://help.github.com/articles/set-up-git) to setup your account. Also you can read further about Git in [Try Git](https://try.github.io/levels/1/challenges/1) or [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
 
@@ -88,7 +87,7 @@ Eclipse IDE for Java EE Developers Recommended](http://www.eclipse.org/downloads
 
 The Code Your Future bootcamp is organized in the following way:
 
-each bootcamper needs to read about the topics and jump into the coding excercises. An a Slack's channel will be used to discuss with tutors and co-bootcampers about both theory and practice, and each on-site talk we are going to go through the outcome of Slack channel discussions, emphasizing about those topics that are causing more pain for all.
+each trainee needs to read about the topics and jump into the coding excercises. An a Slack's channel by topic will be used to discuss with tutors and co-trainees about both theory and practice, and each on-site talk we are going to go through the outcome of Slack channel discussions, emphasizing about those topics that are causing more pain for all.
 
 Slack's account would be used for technical assistance:
 >Code Your Future Java Globant Uruguay - #general*
@@ -136,23 +135,23 @@ Go to Topic 0 resources, check folder *Topic0JavaBootCamp/src*, you will find a 
 ### Expected Result
 
 - Egg's Cartons Console representation in 1 day. e.g.
-*o*: white eggs
-*q*: red eggs
-*e*: empty<br/> 
-=========\
-|ooooo|\
-|ooooo|\
-|ooooo|\
-|ooooo|\
-|ooooo|\
-|oooee|\
-=========\
-|qqqqq|\
-|qqqqq|\
-|qqqqq|\
-|qqqqq|\
-|qqqqq|\
-|qqeee|
+*(O)*: white eggs
+*(D)*: red eggs
+*(G)*: empty<br/> 
+===========\
+(O)(O)(O)(O)(O)\
+(O)(O)(O)(O)(O)\
+(O)(O)(O)(O)(O)\
+(O)(O)(O)(O)(O)\
+(O)(O)(O)(O)(O)\
+(O)(O)(O)(G)(G)\
+===========\
+(D)(D)(D)(D)(D)\
+(D)(D)(D)(D)(D)\
+(D)(D)(D)(D)(D)\
+(D)(D)(D)(D)(D)\
+(D)(D)(D)(D)(D)\
+(D)(D)(G)(G)(G)
 
 ## Commit:
 
@@ -212,7 +211,7 @@ Commit your practice code, whatever you have accomplished.
 4. [Difference Between Mocks and Stubs](https://martinfowler.com/articles/mocksArentStubs.html)
 5. [Optional, good to know its existence though] [Test Driven Development](http://technologyconversations.com/2013/12/24/test-driven-development-tdd-best-practices-using-java-examples-2/)
 
-## Practice:
+## Topic Practice:
 
 1. Implements all unit test cases in JUnit for the methods implemented in the farm application.
 
@@ -227,11 +226,14 @@ Commit your practice code, whatever you have accomplished.
 
 ## Reading:
 
-1. [Spring Framework Fundamentals](https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial)
-
-2. [Spring Framework Projects](https://www.baeldung.com/org-springframework)
+1. [Spring Framework Fundamentals](https://o7planning.org/en/10127/spring-tutorial-for-beginners)
+2. [Spring MVC](https://o7planning.org/en/10129/spring-mvc-tutorial-for-beginners)
+3. [Spring Framework Projects](https://www.baeldung.com/org-springframework)
 
 → [index](#index)
+
+## Topic Practice
+Transform your Farm Application into a Spring Project
 
 # Topic 5: Database Interaction and ORMs
 
@@ -243,9 +245,11 @@ Commit your practice code, whatever you have accomplished.
 ## Extra documentation:
 
 1. [Optimizaciones en MySql](http://www.arsys.info/programacion/bases-de-datos/como-optimizar-bases-de-datos-mysql/)
+2. [JPA](https://www.vogella.com/tutorials/JavaPersistenceAPI/article.html) 
+3. [Spring Data](https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa)
 
 
-## Practice:
+## Topic Practice:
 Do not solve the practice using JDBC, please just send us the sql scripts.
 
 1. Create a database named 'high-school' and modelate:
