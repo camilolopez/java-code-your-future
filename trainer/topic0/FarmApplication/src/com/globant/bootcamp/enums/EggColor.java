@@ -1,7 +1,7 @@
 package com.globant.bootcamp.enums;
 
-public enum EggColor {
-	RED("(D)"), WHITE("(O)");
+public enum EggColor{
+	RED("(D)"), WHITE("(O)"), EMPTY("(E)");
 	
 	private String consoleChar;
 
@@ -12,4 +12,5 @@ public enum EggColor {
 	public String getConsoleChar() {
 		return consoleChar;
 	}
+	
 }

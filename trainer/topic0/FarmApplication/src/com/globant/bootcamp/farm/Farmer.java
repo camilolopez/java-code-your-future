@@ -5,51 +5,47 @@ import java.util.List;
 
 import com.globant.bootcamp.abstracts.Human;
 import com.globant.bootcamp.animals.Egg;
+import com.globant.bootcamp.enums.EggColor;
 
 public class Farmer extends Human {
 
 	@Override
 	public void makeSound() {
-		// TODO Auto-generated method stub
-		System.out.println("Cuantas copas tenes? Booo");
+		System.out.println("Cuántas copas tenés? Booo");
 	}
 
-	public EggCarton[] classifyEggs(Egg[] eggs) {
-		List<EggCarton> whiteEggs = new ArrayList<>();
-		List<EggCarton> redEggs = new ArrayList<>();
+	public List<EggCarton> classifyEggs(List<Egg> eggs) {
+		List<EggCarton> eggsCartons = new ArrayList<>();
 
-		EggCarton whiteEggsCarton = new EggCarton();
-		EggCarton redEggsCarton = new EggCarton();
+		EggCarton whiteEggsCarton = new EggCarton(EggColor.WHITE);
+		EggCarton redEggsCarton = new EggCarton(EggColor.RED);
+
+		eggsCartons.add(whiteEggsCarton);
+		eggsCartons.add(redEggsCarton);
 
 		for (Egg egg : eggs) {
 			switch (egg.getEggColor()) {
 			case WHITE:
-				whiteEggsCarton = fillEggCarton(whiteEggs, whiteEggsCarton, egg);
+				fillEggCarton(eggsCartons, whiteEggsCarton, egg);
 				break;
 			case RED:
-				redEggsCarton = fillEggCarton(redEggs, redEggsCarton, egg);
-
+				fillEggCarton(eggsCartons, redEggsCarton, egg);
+				break;
 			default:
 				break;
 			}
 		}
-		
-		
-		
-		whiteEggs.addAll(redEggs);
 
-		return whiteEggs.toArray(new EggCarton[whiteEggs.size()]);
+		return eggsCartons;
 	}
 
-	public EggCarton fillEggCarton(List<EggCarton> whiteEggs, EggCarton whiteEggsCarton, Egg egg) {
-		whiteEggsCarton.put(egg);
+	public void fillEggCarton(List<EggCarton> eggsCartons, EggCarton eggCarton, Egg egg) {
+		eggCarton.put(egg);
 
-		if (whiteEggsCarton.isFull()) {
-			whiteEggs.add(whiteEggsCarton);
-			whiteEggsCarton = new EggCarton();
+		if (eggCarton.isFull()) {
+			eggsCartons.add(eggCarton);
+			eggCarton = new EggCarton(egg.getEggColor());
 		}
-
-		return whiteEggsCarton;
 	}
 
 }

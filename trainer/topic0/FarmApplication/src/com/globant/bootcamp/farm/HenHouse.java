@@ -1,5 +1,8 @@
 package com.globant.bootcamp.farm;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.globant.bootcamp.animals.Chicken;
 import com.globant.bootcamp.animals.Egg;
 
@@ -16,12 +19,11 @@ public class HenHouse {
 		this.chickens = chickens;
 	}
 
-	public Egg[] getEggs() {
-		Egg[] eggs = new Egg[this.chickens.length];
-
-		int i = 0;
+	public List<Egg> getEggs() {
+		List<Egg> eggs = new ArrayList<Egg>();
+		
 		for (Chicken chicken : this.chickens) {
-			eggs[i++] = chicken.gaveBirth();
+			eggs.add(chicken.gaveBirth());
 		}
 
 		return eggs;
