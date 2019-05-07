@@ -17,7 +17,7 @@ public class Farmer extends Human {
 	public List<EggCarton> classifyEggs(List<Egg> eggs) {
 		List<EggCarton> eggsCartons = new ArrayList<>();
 
-		EggCarton whiteEggsCarton = new EggCarton(EggColor.WHITE);
+		EggCarton whiteEggsCarton = new EggCarton();
 		EggCarton redEggsCarton = new EggCarton(EggColor.RED);
 
 		eggsCartons.add(whiteEggsCarton);

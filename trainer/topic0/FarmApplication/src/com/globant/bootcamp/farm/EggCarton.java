@@ -10,18 +10,22 @@ public class EggCarton implements Comparable<EggCarton>{
 	private Integer lastColumn = 0;
 	private EggColor eggColor;
 
-	private final Egg[][] eggs = new Egg[ROWS][COLUMNS];
+	protected final Egg[][] eggs = new Egg[ROWS][COLUMNS];
 	
 	public EggCarton(EggColor eggColor) {
 		this.eggColor = eggColor;
 	}
+	
+	public EggCarton() {
+	}
 
 	public boolean put(Egg egg) {
 		if (!isFull()) {
-			eggs[lastRow][lastColumn++] = egg;
-			if (lastColumn == COLUMNS) {
-				lastColumn = 0;
-				lastRow++;
+			this.eggs[this.lastRow][this.lastColumn++] = egg;
+			this.eggColor = this.eggColor == null ? egg.getEggColor() : this.eggColor;
+			if (this.lastColumn == COLUMNS) {
+				this.lastColumn = 0;
+				this.lastRow++;
 			}
 		}
 
@@ -41,11 +45,11 @@ public class EggCarton implements Comparable<EggCarton>{
 	}
 
 	public boolean isFull() {
-		return lastRow.equals(ROWS) && lastColumn.equals(0);
+		return this.lastRow.equals(ROWS) && this.lastColumn.equals(0);
 	}
 
 	public Egg[][] getEggs() {
-		return eggs;
+		return this.eggs;
 	}
 
 	@Override

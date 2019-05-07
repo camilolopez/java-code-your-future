@@ -47,6 +47,7 @@ public abstract class Chicken extends Bird {
     public Egg gaveBirth() {
     	// TODO Auto-generated method stub
     	if(eggByDay != 0) {
+    		eggByDay--;
     		return eggType();
     	}
     	

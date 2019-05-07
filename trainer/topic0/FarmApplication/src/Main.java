@@ -8,6 +8,7 @@ import com.globant.bootcamp.farm.Farm;
 import com.globant.bootcamp.farm.Farmer;
 
 public class Main {
+	private static final int PERCENTAGE_WHITE_CHICKEN = 70;
 	private static final int CHIKENS_SIZE = 40;
 
 	public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Main {
 		Chicken[] chickens = new Chicken[CHIKENS_SIZE];
 
 		for (int i = 0; i < CHIKENS_SIZE; i++) {
-			Chicken chicken = i < ((70 * CHIKENS_SIZE) / 100) ? new WhiteChicken() : new BrownChicken();
+			Chicken chicken = i < ((PERCENTAGE_WHITE_CHICKEN * CHIKENS_SIZE) / 100) ? new WhiteChicken() : new BrownChicken();
 			chickens[i] = chicken;
 		}
 
